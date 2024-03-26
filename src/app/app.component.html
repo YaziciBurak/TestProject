@@ -25,8 +25,9 @@
       </div>
       <p>-----------------------------------------------------------------------------------------------</p> 
       <div>
-        <label for="age" >Your Age</label>
-          <input type="number" name="age" id="age" [(ngModel)]="age">
+        <h3>Two-Way Data Binding</h3>
+        <label for="age">Your Age</label>
+          <input type="number" name="age" id="age" [(ngModel)]="age" min="0" max="80">
           <p *ngIf="age == null">Age Cannot Be Null!</p>
           <p *ngIf="age >= 18">You can get your driver licence!</p>
           <p *ngIf="age < 18 && age >= 1">You can't get driver licence!</p> 
